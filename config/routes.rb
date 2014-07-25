@@ -4,7 +4,7 @@ Camcommand::Application.routes.draw do
   get "commands/list"
   post "commands/new"
   post "commands/list"  
-
+  post "commands/clear"
 
   get "info/tos"
   get "info/privacy"
