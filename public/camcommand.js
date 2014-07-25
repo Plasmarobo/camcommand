@@ -61,7 +61,7 @@ function camcmd_dispatchCommand(cmd)
 
 function camcmd_startNewSession()
 {
-	$.post(camcmd_new_url, {comfirm : "yes"});
+	$.post(camcmd_new_url, {confirm : "yes"});
 }
 
 function camcmd_showOptions()
