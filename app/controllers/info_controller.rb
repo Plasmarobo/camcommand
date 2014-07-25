@@ -7,4 +7,7 @@ class InfoController < ApplicationController
 
   def support
   end
+
+  def welcome
+  end
 end

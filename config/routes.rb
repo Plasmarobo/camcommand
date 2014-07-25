@@ -9,8 +9,9 @@ Camcommand::Application.routes.draw do
   get "info/tos"
   get "info/privacy"
   get "info/support"
+  get "info/welcome"
 
-  root 'commands#list'
+  root 'info#welcome'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
