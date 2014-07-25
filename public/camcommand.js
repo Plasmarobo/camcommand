@@ -6,6 +6,7 @@ var camcmd_show = true;
 
 function camcmd_createWindow()
 {
+	camcmd_startNewSession();
 	var body = $('body');
 	 
 	var camcmd_win = $("<div id='camcmd_window' class='camcmd_window'/>");
@@ -58,7 +59,7 @@ function camcmd_dispatchCommand(cmd)
 	$.post(camcmd_cmd_url,{command : cmd});
 }
 
-function camcmd_startNewSession(cmd)
+function camcmd_startNewSession()
 {
 	$.post(camcmd_new_url, {comfirm : "yes"});
 }
