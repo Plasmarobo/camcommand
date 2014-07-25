@@ -1,5 +1,5 @@
 class CommandsController < ApplicationController
-  protect_from_forgery only: :clear
+  protect_from_forgery except: [:new, :clear, :list]
 
   def new
     params[:time] = Time.new.to_i

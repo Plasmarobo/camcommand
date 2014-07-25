@@ -1,5 +1,6 @@
 //var camcmd_url = "CAMERA_URL";
-var camcmd_url = "https://camcommand.herokuapp.com/commands/new";
+var camcmd_cmd_url = "https://camcommand.herokuapp.com/commands/new";
+var camcmd_new_url = "https://camcommand.herokuapp.com/commands/clear";
 var camcmd_asset_path = "https://camcommand.herokuapp.com/";
 var camcmd_show = true;
 
@@ -54,7 +55,12 @@ function camcmd_createWindow()
 
 function camcmd_dispatchCommand(cmd)
 {
-	$.post(camcmd_url,{command : cmd});
+	$.post(camcmd_cmd_url,{command : cmd});
+}
+
+function camcmd_startNewSession(cmd)
+{
+	$.post(camcmd_new_url, {comfirm : "yes"});
 }
 
 function camcmd_showOptions()
