@@ -1,0 +1,13 @@
+%h1 Are you sure? You CANNOT undo this.
+= link_to "Yes", "", onclick: "$('.sure').slideToggle();return false"
+.sure{style:'display:none'}
+  Really?
+  %br
+  = link_to "Yes goddamnit.", "", onclick: "$('.really').slideToggle();return false"
+  .really{style:'display:none'}
+    Kedoke, just press this button:
+    %br
+    .nuke
+      = link_to "Delete all records", controller: "commands", action: "clear", confirm: "yes"
+    
+      

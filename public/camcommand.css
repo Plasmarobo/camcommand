@@ -1,0 +1,90 @@
+.camcmd_window
+{
+	width:100%;
+	min-height:300px;
+	padding:0;
+}
+
+.camcmd_bar
+{
+	height:32px;
+	font-weight:32px;
+	width:100%;
+	padding:0;
+}
+.camcmd_options
+{
+	height:100%;
+	width:auto;
+	float:left;
+	padding:0;
+}
+.camcmd_input_box
+{
+	width:100%;
+	height:auto;
+}
+.camcmd_input
+{
+	width:100%;
+	padding:0;
+}
+
+.camcmd_options_window
+{
+	width:100%;
+	height:auto;
+	display: none;
+}
+
+.camcmd_close
+{
+	height:100%;
+	width:auto;
+	float:right;
+	padding:0;
+	margin:0;
+}
+
+.camcmd_controls
+{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+.camcmd_spacer
+{
+	width:33%;
+	height:33%;
+	padding:0;
+	margin:0;
+	float:left;
+}
+.camcmd_vertical_cell
+{
+	width:100%;
+	height:50%;
+	float:left;
+	text-align: center;
+}
+.camcmd_vertical_cell img
+{
+	vertical-align: bottom;
+}
+
+.camcmd_horizontal_cell
+{
+	width:50%;
+	height:100%;
+	float:left;
+	text-align:center;
+}
+
+.camcmd_horizontal_cell img
+{
+	vertical-align: bottom;
+}
+
+
