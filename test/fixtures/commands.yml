@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  command: MyString
+  time: 1
+  user_id: 1
+
+two:
+  command: MyString
+  time: 1
+  user_id: 1

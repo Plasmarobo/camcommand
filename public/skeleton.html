@@ -1,0 +1,20 @@
+<!-- Standard boilerplate to start hangouts.  Without these, your Hangout will not start. -->
+<link rel="stylesheet" href="//camcommand.herokuapp.com/camcommand.css" />
+<script src="//hangoutsapi.talkgadget.google.com/talkgadget/apps/gadgets/js/rpc.js"></script>
+<script src="//hangoutsapi.talkgadget.google.com/hangouts/api/hangout.js?v=1.4"></script>
+<script src="//camcommand.herokuapp.com/jquery-1.11.1.min.js"></script>
+<script src="//camcommand.herokuapp.com/camcommand.js"></script>
+
+<script>
+function init() {
+  // When API is ready...
+  gapi.hangout.onApiReady.add(
+      function(eventObj) {
+		camcmd_createWindow();
+		camcmd_bindControls();
+      });
+}
+// Add startup listener immediately.  If you need an
+// OAuth 2.0 access token, your startup will be different.
+init();
+</script>

@@ -1,0 +1,17 @@
+%h1 Commands#list
+%table
+  %tr
+    %th
+      Time
+    %th
+      Command
+  - @commands.each do |cmd|
+    %tr
+      %td.timestamp
+        = "#{cmd.created_at}(#{cmd.time})"
+      %td.command
+        = cmd.command
+     
+
+
+
