@@ -72,6 +72,8 @@
 .camcmd_vertical_cell img
 {
 	vertical-align: bottom;
+	width:100%;
+	height:50%;
 }
 
 .camcmd_horizontal_cell
@@ -84,6 +86,8 @@
 
 .camcmd_horizontal_cell img
 {
+	width:50%;
+	height:100%;
 	vertical-align: bottom;
 }
 
